@@ -26,7 +26,7 @@ run_singularity ()
 {
     singularity exec --nv --writable-tmpfs -B /usr/lib64 -B /var/lib/dcv-gl --overlay $SCRATCH/singularity/overlay-50G-10M.ext3:ro $SCRATCH/singularity/cuda11.4-cudnn8-devel-ubuntu18.04.sif /bin/bash -c "
     source ~/.bashrc
-    XLA_PYTHON_CLIENT_PREALLOCATE=false python -m ../JaxCQL/conservative_sac_main.py --env=$2 \
+    XLA_PYTHON_CLIENT_PREALLOCATE=false python ../JaxCQL/conservative_sac_main.py --env=$2 \
                     --logging.output_dir './experiment_output' \
                     --logging.online
     "
