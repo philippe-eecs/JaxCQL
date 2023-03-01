@@ -9,4 +9,4 @@ mkdir logs/err/ -p
 arrENVS=(${ENVS//;/ })
 NUM_ENVS=${#arrENVS[@]}
 
-sbatch --export=ENVS=$ENVS,SEEDS=$SEEDS,OUTDIR=$OUTDIR,ERRDIR=$ERRDIR --array=1-${NUM_ENVS}%16 sbatch.s
+sbatch --export=ENVS=$ENVS,SEEDS=$SEEDS,OUTDIR=$OUTDIR,ERRDIR=$ERRDIR --array=1-${NUM_ENVS}%16 sbatch.sh
