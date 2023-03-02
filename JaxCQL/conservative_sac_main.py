@@ -14,11 +14,11 @@ import flax
 import gym
 import d4rl
 
-from .conservative_sac import ConservativeSAC
-from .replay_buffer import get_d4rl_dataset, subsample_batch
-from .jax_utils import batch_to_jax
-from .model import TanhGaussianPolicy, FullyConnectedQFunction, SamplerPolicy
-from .sampler import StepSampler, TrajSampler
+from JaxCQL.conservative_sac import ConservativeSAC
+from JaxCQL.replay_buffer import get_d4rl_dataset, subsample_batch
+from JaxCQL.jax_utils import batch_to_jax
+from JaxCQL.model import TanhGaussianPolicy, FullyConnectedQFunction, SamplerPolicy
+from JaxCQL.sampler import StepSampler, TrajSampler
 from viskit.logging import logger, setup_logger
 
 

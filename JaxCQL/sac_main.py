@@ -13,11 +13,11 @@ import jax
 import jax.numpy as jnp
 import flax
 
-from .sac import SAC
-from .replay_buffer import ReplayBuffer
-from .jax_utils import batch_to_jax
-from .model import TanhGaussianPolicy, FullyConnectedQFunction, SamplerPolicy
-from .sampler import StepSampler, TrajSampler
+from JaxCQL.sac import SAC
+from JaxCQL.replay_buffer import ReplayBuffer
+from JaxCQL.jax_utils import batch_to_jax
+from JaxCQL.model import TanhGaussianPolicy, FullyConnectedQFunction, SamplerPolicy
+from JaxCQL.sampler import StepSampler, TrajSampler
 from viskit.logging import logger, setup_logger
 
 

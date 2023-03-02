@@ -7,7 +7,7 @@ import flax
 from flax import linen as nn
 import distrax
 
-from .jax_utils import extend_and_repeat, next_rng, JaxRNG
+from JaxCQL.jax_utils import extend_and_repeat, next_rng, JaxRNG
 
 
 def update_target_network(main_params, target_params, tau):

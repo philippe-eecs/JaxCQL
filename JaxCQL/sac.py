@@ -13,11 +13,11 @@ from flax.training.train_state import TrainState
 import optax
 import distrax
 
-from .jax_utils import (
+from JaxCQL.jax_utils import (
     next_rng, value_and_multi_grad, mse_loss, JaxRNG, wrap_function_with_rng,
     collect_metrics
 )
-from .model import Scalar, update_target_network
+from JaxCQL.model import Scalar, update_target_network
 
 
 class SAC(object):
